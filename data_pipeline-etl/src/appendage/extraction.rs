@@ -15,7 +15,7 @@ pub mod extractor{
         }
 
         pub fn read(path: &str){
-            file = std::fs::OpenOptions::new().read(true).open(path).unwrap();
+            let file = std::fs::OpenOptions::new().read(true).open(path).unwrap();
         }
     }
 }
