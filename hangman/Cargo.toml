@@ -1,9 +1,0 @@
-[workspace]
-members = [
-    "authentication",
-    "hang_logic",
-    "utils",
-    "cmd",
-]
-
-resolve = "2"
