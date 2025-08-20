@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/array" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/box_t" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/closures" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/collections" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data_pipeline-etl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data_types" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/enums" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/error_handling" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/generic_types" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangman/authentication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangman/cmd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangman/hang_logic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangman/utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cargo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/iterators" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lifetimes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mystuff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ownership" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/structures" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/traits" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/variables" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_try/add_one" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workspace_try/adder" vcs="Git" />
+  </component>
+</project>
