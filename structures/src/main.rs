@@ -3,20 +3,22 @@ fn main() {
     let email = String::from("value@email.com");
     let mut new_user_1 = create_user(username, email);
     dbg!(&new_user_1);
+
     
     
     let username = String::from("Darksummer");
     let email = String::from("Darksummere@email.com");
     let new_user_2 = copy_user_state(username, email, &new_user_1);
     // let new_user_2 = User{
-    //     username, 
+    //     username,
     //     email,
     //     ..new_user_1
     // };
     
     new_user_1.increment_active_count();
-    
+
     println!("{new_user_1:#?}");
+    println!("{1} {0}", new_user_1.username, new_user_1.email);
     println!("{new_user_2:#?}");
 
     let cat_1 = Animal{};

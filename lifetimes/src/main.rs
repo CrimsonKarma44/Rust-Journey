@@ -1,7 +1,6 @@
 use std::fmt::Display;
 
 fn main() {
-    let v:i32;
     let (x, y) = ("love", "value");
 
     longest_with_an_announcement(x, y, "ann");

@@ -16,7 +16,8 @@ pub mod dot_iter_types {
         // This function is similar to iter_mut but uses into_iter
         // which consumes the vector and allows for modification.
         let variable = vec![1, 2, 3, 4, 5];
-        let sum = variable.clone().into_iter();
+        let sum = variable.clone()
+            .into_iter();
         for value in sum {
             println!("{value}");
         }
@@ -38,11 +39,14 @@ pub mod dot_iter_types {
 pub mod methods{
     pub fn method_consuming_iter(a:&Vec<i32>) -> i32 {
         println!("Sum of elements in the vector: {:?}", a);
-        a.iter().sum()
+        a.iter()
+            .sum()
     }
     pub fn method_producing_iters() -> Vec<i32> {
         let variable = vec![1, 2, 3, 4, 5];
-        let new_array: Vec<_> = variable.iter().map(|x| x+2).collect();
+        let new_array: Vec<_> = variable.iter()
+            .map(|x| x+2)
+            .collect();
         new_array
     }
 
@@ -66,7 +70,8 @@ pub mod just_tests {
             println!("Current sum: {}", sum_value);
         }
 
-        let vec_str = ('a'..'z').map(String::from).collect::<Vec<String>>();
+        let vec_str = ('a'..'z').map(String::from)
+            .collect::<Vec<String>>();
 
         for s in vec_str.iter() {
             let s = s as &str ;
@@ -75,6 +80,8 @@ pub mod just_tests {
     }
 
     pub fn looping_iter(v: &Vec<i32>) {
-        v.iter().map(|x| x + 2).for_each(|x| println!("{}", x));
+        v.iter()
+            .map(|x| x + 2)
+            .for_each(|x| println!("{}", x));
     }
 }
