@@ -1,3 +1,8 @@
+mod weak_pointer;
+mod reference_counting;
+mod drop;
+mod inferior_mutability;
+
 use box_t::heap::List::{Cons, Nil};
 use box_t::smart_pointer::MyBox;
 use box_t::drop::CustomerSmartPointer;
@@ -34,6 +39,7 @@ fn main() {
     
     let _ac = List::Cons(Rc::new(RefCell::new(4)), Rc::clone(&a));
     println!("{}", Rc::strong_count(&a));
+    println!("{}", Rc::weak_count(&a));
     println!("{:#?}", ab);
 }
 
