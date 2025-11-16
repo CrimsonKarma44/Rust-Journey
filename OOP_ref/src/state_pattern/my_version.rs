@@ -31,8 +31,21 @@ impl Post {
 }
 
 mod test {
+    use std::time::Instant;
     use super::*;
-
+    #[test]
+    fn it_works() {
+        let now = Instant::now();
+        let mut post = Post::new();
+        post.add_text("I ate a salad for lunch today");
+        assert_eq!("", post.content());
+        post.request_review();
+        assert_eq!("", post.content());
+        post.approve();
+        assert_eq!("I ate a salad for lunch today", post.content());
+        println!("elapsed: {:?}", now.elapsed());
+        //    1.575µs
+    }
     #[test]
     fn post_test() {
         let mut post = Post::new();
