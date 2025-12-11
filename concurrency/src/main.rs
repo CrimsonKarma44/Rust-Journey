@@ -37,6 +37,9 @@ fn main() {
     concurrency_shared_state::basic();
 
     println!(".....");
+    threaded::channel_mpsc();
+    
+    println!(".....");
     thread::sleep(Duration::from_millis(2));
     
     concurrency_shared_state::shared_across_threads();

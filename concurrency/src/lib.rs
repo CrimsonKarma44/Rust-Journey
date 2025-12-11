@@ -114,7 +114,7 @@ pub mod threaded {
             println!("Got: {received}");
         }
     }
-    
+
     // Mutex: mutual exclusion
     pub mod concurrency_shared_state {
         use std::sync::{Mutex, Arc};
@@ -142,6 +142,7 @@ pub mod threaded {
                 let handle = thread::spawn(move || {
                     let mut num = counter.lock().unwrap();
                     *num += 1;
+                    println!("{}", *num);
                 });
                 
                 handles.push(handle);
