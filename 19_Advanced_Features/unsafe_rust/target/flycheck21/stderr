@@ -1,0 +1,182 @@
+   0.279763755s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint: fingerprint error for unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("unsafe_rust", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/src/lib.rs", Edition2024) }
+   0.279977175s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/target/debug/.fingerprint/unsafe_rust-5a1404bbc1fd3438/lib-unsafe_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   0.989953421s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint: fingerprint error for unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("unsafe_rust", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/src/lib.rs", Edition2024) }
+   0.990010360s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/target/debug/.fingerprint/unsafe_rust-4a08116643a115f8/test-lib-unsafe_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   0.990954430s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint: fingerprint error for unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust)/Check { test: false }/TargetInner { name: "unsafe_rust", doc: true, ..: with_path("/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/src/main.rs", Edition2024) }
+   0.990993101s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/target/debug/.fingerprint/unsafe_rust-0203cb24e40dbda6/bin-unsafe_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   0.991916189s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint: fingerprint error for unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust)/Check { test: true }/TargetInner { name: "unsafe_rust", doc: true, ..: with_path("/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/src/main.rs", Edition2024) }
+   0.991951406s  INFO prepare_target{force=false package_id=unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust) target="unsafe_rust"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust/target/debug/.fingerprint/unsafe_rust-c2ad7faad92543df/test-bin-unsafe_rust`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+    Checking unsafe_rust v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/unsafe_rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.02s

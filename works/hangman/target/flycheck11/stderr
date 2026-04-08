@@ -1,0 +1,373 @@
+warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+  |
+  = note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+  = note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+  = note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+warning: /home/deus/Documents/code/rust/Rust-Journey/hangman/Cargo.toml: unused manifest key: workspace.resolve
+   0.260442662s  INFO prepare_target{force=false package_id=authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication) target="authentication"}: cargo::core::compiler::fingerprint: fingerprint error for authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("authentication", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication/src/lib.rs", Edition2021) }
+   0.260492095s  INFO prepare_target{force=false package_id=authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication) target="authentication"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/authentication-18358dd00ebeab97/lib-authentication`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   1.303262437s  INFO prepare_target{force=false package_id=utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils) target="utils"}: cargo::core::compiler::fingerprint: fingerprint error for utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("utils", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/utils/src/lib.rs", Edition2021) }
+   1.303309112s  INFO prepare_target{force=false package_id=utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils) target="utils"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/utils-155ad3e9335b0e8b/lib-utils`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  17: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  18: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  21: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  22: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   1.304801614s  INFO prepare_target{force=false package_id=authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication) target="authentication"}: cargo::core::compiler::fingerprint: fingerprint error for authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("authentication", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication/src/lib.rs", Edition2021) }
+   1.304849174s  INFO prepare_target{force=false package_id=authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication) target="authentication"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/authentication-045d37cbc5fb32e2/test-lib-authentication`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   1.309365132s  INFO prepare_target{force=false package_id=cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd) target="cmd"}: cargo::core::compiler::fingerprint: fingerprint error for cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd)/Check { test: false }/TargetInner { name: "cmd", doc: true, ..: with_path("/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd/src/main.rs", Edition2021) }
+   1.309405706s  INFO prepare_target{force=false package_id=cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd) target="cmd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/cmd-64a7b7a17eec756d/bin-cmd`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   1.310355898s  INFO prepare_target{force=false package_id=hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic) target="hang_logic"}: cargo::core::compiler::fingerprint: fingerprint error for hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hang_logic", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic/src/lib.rs", Edition2021) }
+   1.310394367s  INFO prepare_target{force=false package_id=hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic) target="hang_logic"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/hang_logic-b1331535404d9d7c/lib-hang_logic`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  17: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  18: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  21: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  22: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   1.311201195s  INFO prepare_target{force=false package_id=cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd) target="cmd"}: cargo::core::compiler::fingerprint: fingerprint error for cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd)/Check { test: true }/TargetInner { name: "cmd", doc: true, ..: with_path("/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd/src/main.rs", Edition2021) }
+   1.311234763s  INFO prepare_target{force=false package_id=cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd) target="cmd"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/cmd-90138b00ee14ef06/test-bin-cmd`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   1.331631914s  INFO prepare_target{force=false package_id=hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic) target="hang_logic"}: cargo::core::compiler::fingerprint: fingerprint error for hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("hang_logic", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic/src/lib.rs", Edition2021) }
+   1.331678353s  INFO prepare_target{force=false package_id=hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic) target="hang_logic"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/hang_logic-2f35db6ff48fd2ed/test-lib-hang_logic`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   1.332553648s  INFO prepare_target{force=false package_id=utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils) target="utils"}: cargo::core::compiler::fingerprint: fingerprint error for utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("utils", ["lib"], "/home/deus/Documents/code/rust/Rust-Journey/hangman/utils/src/lib.rs", Edition2021) }
+   1.332595743s  INFO prepare_target{force=false package_id=utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils) target="utils"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/deus/Documents/code/rust/Rust-Journey/hangman/target/debug/.fingerprint/utils-6d66a98adc157066/test-lib-utils`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  16: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  17: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:581:40
+  20: std::panicking::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panicking.rs:544:19
+  21: std::panic::catch_unwind
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+    Checking utils v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/utils)
+    Checking authentication v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/authentication)
+    Checking hang_logic v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/hang_logic)
+    Checking cmd v0.1.0 (/home/deus/Documents/code/rust/Rust-Journey/hangman/cmd)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.62s
