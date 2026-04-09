@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "pattern_matching",
+]
+
+resolver = "2"

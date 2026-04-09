@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "box_t",
+]
+
+resolver = "2"

@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "traits",
+    "unsafe_rust",
+]
+resolver = "2"

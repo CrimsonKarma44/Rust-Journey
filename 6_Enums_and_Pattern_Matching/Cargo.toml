@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "enums",
+]
+
+resolver = "2"

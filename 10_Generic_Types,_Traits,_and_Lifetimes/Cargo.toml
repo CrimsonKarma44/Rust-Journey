@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "lifetimes",
+    "generic_types",
+    "traits",
+]
+
+resolver = "2"

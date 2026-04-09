@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "OOP_ref",
+]
+
+resolver = "2"

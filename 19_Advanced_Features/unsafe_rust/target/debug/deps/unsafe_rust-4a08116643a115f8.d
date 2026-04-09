@@ -1,5 +1,0 @@
-/home/deus/Documents/code/rust/Rust-Journey/19_Advanced_Features/unsafe_rust/target/debug/deps/unsafe_rust-4a08116643a115f8.d: src/lib.rs
-
-/home/deus/Documents/code/rust/Rust-Journey/19_Advanced_Features/unsafe_rust/target/debug/deps/libunsafe_rust-4a08116643a115f8.rmeta: src/lib.rs
-
-src/lib.rs:
