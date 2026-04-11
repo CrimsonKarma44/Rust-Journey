@@ -3,4 +3,9 @@ name = "unsafe_rust"
 version = "0.1.0"
 edition = "2024"
 
+
+[[test]]
+name= "test"
+path= "test/test.rs"
+
 [dependencies]

@@ -3,4 +3,8 @@ name = "traits"
 version = "0.1.0"
 edition = "2024"
 
+[[test]]
+name = "default_generictype"
+path = "test/default_generictype.test.rs"
+
 [dependencies]
