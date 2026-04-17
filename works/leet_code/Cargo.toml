@@ -1,0 +1,3 @@
+[workspace]
+members = ["merge_strings_alternately_1768"]
+resolver = "2"

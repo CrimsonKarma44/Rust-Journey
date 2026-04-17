@@ -1,6 +1,8 @@
 [workspace]
 members = [
+    "functions_closures",
     "traits",
+    "types",
     "unsafe_rust",
 ]
 resolver = "2"
