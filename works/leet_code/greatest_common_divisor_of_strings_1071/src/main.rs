@@ -11,7 +11,7 @@ fn gcd_of_strings(str1: String, str2: String) -> String {
     let mut match_index: Option<usize> = None;
     for i in str1.chars() {
         match match_index {
-            Some(_) => {
+            Some(_) => {    
                 if index < str2.len() - 1 {
                     if i == *(&str2[index + 1..index + 2].chars().next().unwrap()) {
                         repeated_val.push_str(i.to_string().as_str());

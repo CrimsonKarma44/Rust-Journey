@@ -1,9 +1,9 @@
 mod type_synonym {
     use std::io::Error;
 
-    pub type Synonym = i32;
+    // pub type Synonym = i32;
 
-    pub type thunk = Box<dyn Fn() + Send + 'static>;
+    // pub type thunk = Box<dyn Fn() + Send + 'static>;
 
     pub mod without_alias {
         use super::Error;

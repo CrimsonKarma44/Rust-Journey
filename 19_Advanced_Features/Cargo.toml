@@ -1,6 +1,7 @@
 [workspace]
 members = [
-    "functions_closures",
+    "functions_closures", 
+    "macros",
     "traits",
     "types",
     "unsafe_rust",
