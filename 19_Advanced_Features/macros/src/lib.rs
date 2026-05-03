@@ -15,12 +15,8 @@ pub mod declarative_macro {
 }
 
 pub mod procedural_macros {
-    use proc_macro;
-
     pub mod custom {
-        pub trait HelloMacro {
-            fn hello_macro();
-        }
+        // check hello_macro
     }
 
     pub mod attribute_like {}

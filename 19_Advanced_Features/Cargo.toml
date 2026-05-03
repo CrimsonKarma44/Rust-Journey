@@ -1,9 +1,10 @@
 [workspace]
 members = [
-    "functions_closures", 
+    "functions_closures",
     "macros",
     "traits",
     "types",
     "unsafe_rust",
 ]
 resolver = "2"
+exclude = ["hello_macro/*", "macros/hello_macro/hello_macro_derive"]
