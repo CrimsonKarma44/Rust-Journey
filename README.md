@@ -1,6 +1,6 @@
 # Rust Journey 🦀
 
-Welcome to my Rust learning repository! This project documents my progress as I work through [The Rust Programming Language](https://doc.rust-lang.org/book/) (often referred to as "The Book"). It contains a mix of chapter exercises, small experiments, and more complex projects.
+This repository contains completed exercises and projects from The Rust Programming Language (commonly known as "The Book"). I have worked through and completed the entire book, including the chapter exercises and the final project. The repo follows the book's chapter structure and also includes additional experiments and custom projects.
 
 ## 📚 Table of Contents (The Book Chapters)
 
