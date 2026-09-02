@@ -7,6 +7,20 @@
 
 # Backup files created by some rust tools
 **/*.rs.bk
+**/*.rlib
+**/*.rmeta
+*.so
+*.dylib
+*.dll
+
+# Cargo and dependency files
+.cargo/
+
+# Rust profiling and debugging
+*.flamegraph
+*.perf
+perf.data*
+flamegraph.svg
 
 # --- IDEs and Editors ---
 # JetBrains (IntelliJ, RustRover, etc.)

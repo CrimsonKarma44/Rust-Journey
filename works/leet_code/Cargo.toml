@@ -1,3 +1,3 @@
 [workspace]
-members = ["greatest_common_divisor_of_strings_1071","merge_strings_alternately_1768"]
+members = ["credit_card_mask","greatest_common_divisor_of_strings_1071","merge_strings_alternately_1768"]
 resolver = "2"
