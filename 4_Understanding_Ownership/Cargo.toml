@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "ownerships",
+    "slices", "str_operation",
+]
+
+resolver = "2"

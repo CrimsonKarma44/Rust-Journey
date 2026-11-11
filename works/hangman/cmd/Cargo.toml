@@ -1,0 +1,9 @@
+[package]
+name = "cmd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+authentication  = {path="../authentication"}
+hang_logic = {path="../hang_logic"}
+utils = {path="../utils"}

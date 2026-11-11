@@ -1,0 +1,17 @@
+COLUMN Names
+John Doe
+Jonathan Mills
+Lucky Dube
+END
+
+COLUMN Prices
+100
+400
+500
+END
+
+COLUMN Addresses
+United States of America
+United Kingdom
+Nigeria
+END

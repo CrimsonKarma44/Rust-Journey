@@ -1,0 +1,59 @@
+use std::{
+    fs,
+    io::{BufRead, BufReader, Write},
+    net::{TcpListener, TcpStream},
+    thread,
+    time::Duration,
+};
+
+// We could do more here! If you want to continue enhancing this project, here are some ideas:
+// Add more documentation to ThreadPool and its public methods.
+// Add tests of the library’s functionality.
+// Change calls to unwrap to more robust error handling.
+// Use ThreadPool to perform some task other than serving web requests.
+// Find a thread pool crate on crates.io and implement a similar web server using the crate
+// instead. Then compare its API and robustness to the thread pool we implemented.
+
+use multi_threaded::ThreadPool;
+
+fn main() {
+    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    println!("Starting Connection!");
+
+    let pool = ThreadPool::new(3).unwrap();
+    
+    for stream in listener.incoming().take(2) {
+        let stream = stream.unwrap();
+        pool.execute(|| {
+            handle_connection(stream);
+        });
+        
+    }
+    println!("Shutting down!");
+}
+
+fn handle_connection(mut stream: TcpStream) {
+    let buf_reader = BufReader::new(&stream);
+    let request_line = buf_reader.lines().next().unwrap().unwrap();
+
+    let (filename, status) = match request_line.as_str() {
+        "GET / HTTP/1.1" => {
+            println!("{request_line}");
+            ("../static/index.html", "HTTP/1.1 200")
+        }
+        "GET /sleep HTTP/1.1" => {
+            println!("{request_line}");
+            thread::sleep(Duration::from_secs(5));
+            ("../static/sleep.html", "HTTP/1.1 200")
+        }
+        _ => {
+            println!("{request_line}");
+            ("../static/404.html", "HTTP/1.1 404 NOT FOUND")
+        }
+    };
+    let content = fs::read_to_string(filename).unwrap();
+    let content_len = content.len();
+
+    let response = format!("{status}\r\nContent-Length: {content_len}\r\n\r\n{content}");
+    stream.write_all(response.as_bytes()).unwrap();
+}

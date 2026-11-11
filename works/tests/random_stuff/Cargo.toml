@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "shadowing", "string_test",
+]
+resolver = "2"
+# exclude = ["hello_macro/*", "macros/hello_macro/hello_macro_derive"]

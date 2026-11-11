@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "closures",
+    "iterators",
+]
+
+resolver = "2"

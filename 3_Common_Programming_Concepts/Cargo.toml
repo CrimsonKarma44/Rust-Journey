@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "data_types",
+    "array",
+    "variables",
+]
+
+resolver = "2"

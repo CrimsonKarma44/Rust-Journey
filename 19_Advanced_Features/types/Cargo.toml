@@ -1,0 +1,11 @@
+[package]
+name = "types"
+version = "0.1.0"
+edition = "2024"
+
+[[test]]
+name = "advanced_types"
+path = "test/advanced_types.test.rs"
+
+
+[dependencies]
