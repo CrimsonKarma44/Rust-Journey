@@ -2,8 +2,9 @@
 # Ignore the target directory which contains build artifacts
 **/target/
 
-# Ignore Cargo.lock files for all sub-projects (typical for learning/mono-repos)
-**/Cargo.lock
+# Cargo.lock is intentionally NOT ignored: every crate here is a binary or a
+# workspace with binaries, and Cargo recommends committing the lock file so
+# builds use the exact dependency versions they were tested with.
 
 # Backup files created by some rust tools
 **/*.rs.bk

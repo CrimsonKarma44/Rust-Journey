@@ -62,11 +62,15 @@ cargo test     # run the tests
 
 ## 🧹 Maintenance
 
-`clean_rust_projects.sh` runs `cargo clean` in each top-level folder that has a `Cargo.toml`, so the `target/` folders stop taking up disk space. The repo path is set inside the script (`PROJECTS_DIR`), so change it if your clone lives somewhere else:
+`clean_rust_projects.sh` finds every Cargo project in the repo, including the nested ones under `works/`, and runs `cargo clean` wherever a `target/` folder exists. It works from wherever you cloned the repo:
 
 ```bash
-./clean_rust_projects.sh
+./clean_rust_projects.sh -n          # dry run: list what would be cleaned and how big it is
+./clean_rust_projects.sh             # clean everything
+./clean_rust_projects.sh works/      # clean only one folder
 ```
+
+Each project's `Cargo.lock` is committed, so `cargo build` uses the same dependency versions every time (`cargo build --locked` turns any mismatch into an error).
 
 ## 📄 License
 
